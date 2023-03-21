@@ -297,3 +297,9 @@ list.c:34:4: error: ‘*L.head’ is used uninitialized [-Werror=uninitialized]
 cc1: all warnings being treated as errors
 Compilation failed
 97a86bd
+Tue 21 Mar 2023 11:24:17 PM UTC: 
+ list.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  3|5
+total_score: 15/70
+e1f1a90
