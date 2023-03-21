@@ -164,3 +164,23 @@ Tue 21 Mar 2023 10:41:32 PM UTC:
  tests:  2|5
 total_score: 15/70
 d9645fd
+Tue 21 Mar 2023 11:12:08 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:46:11: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   46 |   if(!list->next) return NULL;
+      |           ^~
+list.c:47:21: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   47 |   list->current=list->next;
+      |                     ^~
+list.c:48:16: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   48 |     return list->next->data;
+      |                ^~
+list.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+   49 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+04bed13
