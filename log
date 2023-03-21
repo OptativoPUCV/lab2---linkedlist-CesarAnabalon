@@ -148,3 +148,13 @@ list.c:41:21: error: ‘List’ {aka ‘struct List’} has no member named ‘f
       |                     ^~
 Compilation failed
 747b679
+Tue 21 Mar 2023 10:41:25 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:9: error: ‘List’ {aka ‘struct List’} has no member named ‘firts’
+   40 | if(!list->firts) return NULL;
+      |         ^~
+Compilation failed
+dfdf35f
