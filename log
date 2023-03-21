@@ -58,3 +58,17 @@ list.c:42:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 5536c04
+Tue 21 Mar 2023 10:27:46 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:16: error: ‘List’ {aka ‘struct List’} has no member named ‘dato’
+   41 |     return list->dato[0];
+      |                ^~
+list.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+beca8e2
