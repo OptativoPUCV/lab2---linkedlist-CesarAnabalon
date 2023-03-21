@@ -115,3 +115,23 @@ list.c:41:12: error: returning ‘int’ from a function with return type ‘voi
 cc1: all warnings being treated as errors
 Compilation failed
 9fd1705
+Tue 21 Mar 2023 10:40:20 PM UTC: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:9: error: ‘List’ {aka ‘struct List’} has no member named ‘firts’
+   40 | if(!list->firts) return NULL;
+      |         ^~
+list.c:41:21: error: ‘List’ {aka ‘struct List’} has no member named ‘firts’
+   41 |   list->current=list->firts;
+      |                     ^~
+list.c:42:15: error: ‘List’ {aka ‘struct List’} has no member named ‘first’
+   42 |   return (list->first->data);
+      |               ^~
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5f09698
