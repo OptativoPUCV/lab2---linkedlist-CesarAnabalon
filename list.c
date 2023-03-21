@@ -33,6 +33,8 @@ List * createList() {
   L->head = NULL;
   L->current = NULL;
   L->tail = NULL;
+  L->next = NULL;
+  L->prev=NULL;
      return L;
 }
 
