@@ -50,7 +50,7 @@ void * nextList(List * list) {
   list->head =list->head->next; 
   list->current=list->head->next;
   
-    return list->current->data;
+    return NULL;
 }
 
 void * lastList(List * list) {
