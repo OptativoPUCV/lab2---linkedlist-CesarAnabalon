@@ -309,3 +309,13 @@ Tue 21 Mar 2023 11:33:30 PM UTC:
  tests:  2|5
 total_score: 15/70
 cd4f8c6
+Tue 21 Mar 2023 11:34:44 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:47:19: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   47 |   list->head =list->next;
+      |                   ^~
+Compilation failed
+95b400c
