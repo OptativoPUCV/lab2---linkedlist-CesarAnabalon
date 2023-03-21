@@ -43,7 +43,7 @@ if(!list->head) return NULL;
 }
 
 void * nextList(List * list) {
-  if(!list->current) return NULL;
+  if(!list->current->next) return NULL;
   list->head =list->head->next; 
   list->current=list->head->next;
   
