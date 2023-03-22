@@ -601,3 +601,9 @@ list.c:50:9: error: expected identifier before ‘*’ token
       |         ^
 Compilation failed
 23529d7
+Wed 22 Mar 2023 12:57:21 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+a1b98cb
