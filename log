@@ -547,3 +547,14 @@ list.c:54:10: error: returning ‘int’ from a function with return type ‘voi
 cc1: all warnings being treated as errors
 Compilation failed
 5ea65d7
+Wed 22 Mar 2023 12:44:09 AM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:55:10: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   55 |   return a;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+6bd6c30
