@@ -591,3 +591,13 @@ list.c:50:9: error: expected identifier before ‘*’ token
       |         ^
 Compilation failed
 fb46948
+Wed 22 Mar 2023 12:56:30 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:50:9: error: expected identifier before ‘*’ token
+   50 |   list->*current=list->current->next;
+      |         ^
+Compilation failed
+23529d7
