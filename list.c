@@ -49,7 +49,7 @@ void * nextList(List * list) {
   list->head = list->head->next;
   list->current ++;
     
-  return (list->head->data);
+  return (list->current->data);
 }
 
 void * lastList(List * list) {
