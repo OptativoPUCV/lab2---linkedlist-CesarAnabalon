@@ -44,15 +44,15 @@ if(!list->head) return NULL;
 }
 
 void * nextList(List * list) {  
-while(!list->head) 
-{
+  while(!list->head) 
+  {
   list->head = list->head->next;
     
   list->current=list->head->next;
   
     return list->head->data;
-}
-  
+  }
+    return list->head->data;
 }
 
 void * lastList(List * list) {
