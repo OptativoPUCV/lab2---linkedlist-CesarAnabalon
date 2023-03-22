@@ -827,3 +827,14 @@ Wed 22 Mar 2023 01:27:50 AM UTC:
  tests:  3|5
 total_score: 15/70
 37af8f6
+Wed 22 Mar 2023 01:28:12 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:47:18: error: ‘next’ undeclared (first use in this function)
+   47 |   if(!list->head-next)return NULL;
+      |                  ^~~~
+list.c:47:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+311e650
