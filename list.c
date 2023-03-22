@@ -45,13 +45,13 @@ if(!list->head) return NULL;
 
 void * nextList(List * list) {  
   if(!list->head) return NULL;
-  if(!list->current->next)return NULL;
+  if(list->current->next = NIL)return NULL;
   
   list->head = list->head->next;
     
   list->current = list->head->next;
     
-    return (list->head->data);
+  return (list->head->data);
 }
 
 void * lastList(List * list) {
