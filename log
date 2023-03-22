@@ -900,3 +900,9 @@ list.c:66:24: error: ‘dato’ undeclared (first use in this function); did you
 list.c:66:24: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 baf23a1
+Wed 22 Mar 2023 02:00:13 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|5
+total_score: 15/70
+1c54af8
