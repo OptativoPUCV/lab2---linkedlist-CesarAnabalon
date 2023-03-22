@@ -636,3 +636,9 @@ list.c:47:21: error: ‘next’ undeclared (first use in this function)
 list.c:47:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f49fa41
+Wed 22 Mar 2023 01:01:58 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+45d2323
