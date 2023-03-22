@@ -513,3 +513,14 @@ Wed 22 Mar 2023 12:42:17 AM UTC:
  tests:  3|5
 total_score: 15/70
 071dee0
+Wed 22 Mar 2023 12:42:51 AM UTC: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:56:1: error: control reaches end of non-void function [-Werror=return-type]
+   56 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+dacd2b3
