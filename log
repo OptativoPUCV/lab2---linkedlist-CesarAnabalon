@@ -703,3 +703,14 @@ Wed 22 Mar 2023 01:09:56 AM UTC:
  tests:  2|5
 total_score: 15/70
 42bb2c5
+Wed 22 Mar 2023 01:11:45 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:53:30: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   53 |     return (list->head->data)&&(list->current);
+      |            ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7aeafb8
