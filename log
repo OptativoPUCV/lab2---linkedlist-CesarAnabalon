@@ -877,3 +877,8 @@ list.c:48:28: error: ‘NIL’ undeclared (first use in this function)
 list.c:48:28: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 92a80b4
+Wed 22 Mar 2023 01:55:36 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+8a4ec37
