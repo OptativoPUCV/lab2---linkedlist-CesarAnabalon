@@ -43,9 +43,7 @@ if(!list->head) return NULL;
   return (list->head->data);
 }
 
-void * nextList(List * list) {
-  if(!list->head) return NULL;
-  
+void * nextList(List * list) {  
   list->current=list->head->next;
   
     return list->current->data;
