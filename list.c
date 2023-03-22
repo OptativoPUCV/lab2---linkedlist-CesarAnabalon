@@ -44,10 +44,12 @@ if(!list->head) return NULL;
 }
 
 void * nextList(List * list) {  
+
+  list->head = list->head->next;
+    
+  list->current=list->head;
   
-  list->current=list->current->next;
-  
-    return list->current->data;
+    return list->head->data;
 }
 
 void * lastList(List * list) {
