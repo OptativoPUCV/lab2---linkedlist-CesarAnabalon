@@ -48,7 +48,7 @@ if(!list->head) return NULL;
 
   list->head = list->head->next;
     
-  list->current=list->current->next;
+  list->current=list->next;
   
     return list->head->data;
 }
