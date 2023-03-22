@@ -43,11 +43,12 @@ if(!list->head) return NULL;
   return (list->current->data);
 }
 
-void * nextList(List * list) {  
+void * nextList(List * list) 
+{  
   if(list->current != NULL) return NULL;
     
   list->current = list->current->next;
-  list->head = list->head->next
+  list->head = list->head->next;
     
   
   return (list->head->data);
