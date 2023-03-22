@@ -44,15 +44,11 @@ if(!list->head) return NULL;
 }
 
 void * nextList(List * list) {  
-  while(!list->head) 
-  {
+  
   list->head = list->head->next;
     
   list->current=list->head->next;
-  
-  }
-  int a = 2;
-  return a;
+    
     return list->head->data;
 }
 
