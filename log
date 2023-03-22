@@ -607,3 +607,15 @@ Wed 22 Mar 2023 12:57:21 AM UTC:
  tests:  2|5
 total_score: 15/70
 a1b98cb
+Wed 22 Mar 2023 01:00:28 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:50:3: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   50 |   current=current->next;
+      |   ^~~~~~~
+      |   popCurrent
+list.c:50:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+106fa2f

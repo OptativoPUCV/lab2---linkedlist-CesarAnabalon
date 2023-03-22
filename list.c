@@ -4,7 +4,7 @@
 #include "list.h"
 
 typedef struct Node Node;
-
+//
 struct Node {
     void * data;
     Node * next;
@@ -47,7 +47,7 @@ void * nextList(List * list) {
   if(!list->current)return NULL;
   list->head = list->head->next;
     
-  list->current=list->current->next;
+  current=current->next;
     
     return list->head->data;
 }
