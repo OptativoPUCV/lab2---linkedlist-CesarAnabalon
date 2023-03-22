@@ -1001,3 +1001,21 @@ Wed 22 Mar 2023 05:00:11 PM UTC:
  tests:  2|5
 total_score: 15/70
 662e131
+Wed 22 Mar 2023 05:01:03 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:51:32: error: expected ‘;’ before ‘return’
+   51 |   list->head = list->head->next
+      |                                ^
+      |                                ;
+......
+   54 |   return (list->head->data);
+      |   ~~~~~~                        
+list.c:55:1: error: control reaches end of non-void function [-Werror=return-type]
+   55 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d5c1d8c
