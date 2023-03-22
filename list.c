@@ -46,9 +46,9 @@ if(!list->head) return NULL;
 void * nextList(List * list) {  
   if(!list->current->next)return NULL;
   
-  list->head = list->head->next;
+  list->head = list->head->next->next;
     
-  list->current=list->current->next;
+  list->current=list->current->next->next;
     
     return list->head->data;
 }
