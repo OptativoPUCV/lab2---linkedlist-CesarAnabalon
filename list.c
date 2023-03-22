@@ -44,11 +44,12 @@ if(!list->head) return NULL;
 }
 
 void * nextList(List * list) {  
-  if(list->current== NULL)return NULL;
+  if(list->current != NULL)
   
-  list->head = list->head->next;
-  list->current ++;
+  list->current = list->current->next;
+
     
+  
   return (list->head->data);
 }
 
@@ -62,14 +63,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  Node* n = createNode(data);
-  n->next = list->head;
-  if(list->head)
-  {
-    list->head->prev =n ;
-  }
-  list->head = n;
-  n->prev = NULL;
+
   
 }
 
