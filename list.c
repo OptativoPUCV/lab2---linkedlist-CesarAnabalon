@@ -102,7 +102,7 @@ void pushCurrent(List * list, void * data)
 
   nodito->prev = list->current->next;
   list->current = nodito;
-  return list->current;
+  return list->current->data;
   
 }
 

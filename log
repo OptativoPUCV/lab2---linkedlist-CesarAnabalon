@@ -1146,3 +1146,17 @@ list.c:99:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 aa2a333
+Thu 23 Mar 2023 02:32:58 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:105:23: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  105 |   return list->current->data;
+      |          ~~~~~~~~~~~~~^~~~~~
+list.c:99:6: note: declared here
+   99 | void pushCurrent(List * list, void * data)
+      |      ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b7ef203
