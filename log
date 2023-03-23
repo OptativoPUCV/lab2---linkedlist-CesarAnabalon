@@ -1132,3 +1132,17 @@ Thu 23 Mar 2023 02:32:08 PM UTC:
  tests:  10|2
 total_score: 45/70
 9b759b0
+Thu 23 Mar 2023 02:32:48 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:105:14: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  105 |   return list->current;
+      |          ~~~~^~~~~~~~~
+list.c:99:6: note: declared here
+   99 | void pushCurrent(List * list, void * data)
+      |      ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aa2a333

@@ -100,9 +100,9 @@ void pushCurrent(List * list, void * data)
 {
   Node* nodito = createNode(data);
 
-  nodito->next = list->current->next;
+  nodito->prev = list->current->next;
   list->current = nodito;
-  
+  return list->current;
   
 }
 
