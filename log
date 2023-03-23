@@ -1260,3 +1260,22 @@ Thu 23 Mar 2023 03:38:41 PM UTC:
  tests:  12|0
 total_score: 70/70
 8d028c9
+Thu 23 Mar 2023 06:10:21 PM UTC: 
+ list.c | 20 +++++++-------------
+ 1 file changed, 7 insertions(+), 13 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:167:10: error: ‘datoEliminado’ undeclared (first use in this function); did you mean ‘aEliminar’?
+  167 |   return datoEliminado;
+      |          ^~~~~~~~~~~~~
+      |          aEliminar
+list.c:167:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:133:9: error: unused variable ‘aEliminar’ [-Werror=unused-variable]
+  133 |   void* aEliminar = list->current->data;
+      |         ^~~~~~~~~
+list.c:168:1: error: control reaches end of non-void function [-Werror=return-type]
+  168 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+76c7feb
