@@ -98,12 +98,7 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) 
 {
-  Node* nodito = createNode(data);
-  
-  if(list->current  ==  NULL)
-  {
-    
-  }
+  return NULL;
     
 }
 

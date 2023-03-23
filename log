@@ -1240,3 +1240,17 @@ list.c:101:9: error: unused variable ‘nodito’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c90c72d
+Thu 23 Mar 2023 03:38:18 PM UTC: 
+ list.c | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:101:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  101 |   return NULL;
+      |          ^~~~
+list.c:99:6: note: declared here
+   99 | void pushCurrent(List * list, void * data)
+      |      ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e9b1d21
