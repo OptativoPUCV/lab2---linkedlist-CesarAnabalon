@@ -82,6 +82,12 @@ void pushFront(List * list, void * data)
     list->head = nodito;
     list->tail = nodito;
   }
+  else
+  {
+    nodito->next = list->head;
+    list->head->prev = nodito;
+    list->head = nodito;
+  }
   
 }
 
