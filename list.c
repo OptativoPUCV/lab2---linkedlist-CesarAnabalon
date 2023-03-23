@@ -99,11 +99,11 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data) 
 {
   Node* nodito = createNode(data);
-  if(list == NULL)
-  {
-    list->head = nodito;
-    list->tail = nodito;
-  }
+
+  
+  list->current->next =nodito;
+  
+  
   
 }
 
