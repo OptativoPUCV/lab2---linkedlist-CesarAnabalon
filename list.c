@@ -96,7 +96,15 @@ void pushBack(List * list, void * data) {
     pushCurrent(list,data);
 }
 
-void pushCurrent(List * list, void * data) {
+void pushCurrent(List * list, void * data) 
+{
+  Node* nodito = createNode(data);
+  if(list == NULL)
+  {
+    list->head = nodito;
+    list->tail = nodito;
+  }
+  
 }
 
 void * popFront(List * list) {
@@ -110,6 +118,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  
     return NULL;
 }
 
