@@ -102,7 +102,7 @@ void pushCurrent(List * list, void * data)
 
   if(list->head == NULL)
   {
-    pushFront(list,nodito)
+    pushFront(list,nodito);
   }
   else
   {
