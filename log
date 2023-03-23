@@ -1192,3 +1192,16 @@ Thu 23 Mar 2023 02:47:42 PM UTC:
  tests:  10|2
 total_score: 45/70
 9d1ef4c
+Thu 23 Mar 2023 02:48:31 PM UTC: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:105:27: error: expected ‘;’ before ‘}’ token
+  105 |     pushFront(list,nodito)
+      |                           ^
+      |                           ;
+  106 |   }
+      |   ~                        
+Compilation failed
+dad21cc
