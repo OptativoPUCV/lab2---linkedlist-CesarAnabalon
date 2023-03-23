@@ -103,6 +103,7 @@ void pushCurrent(List * list, void * data)
   if(list->head == NULL)
   {
     list->head = nodito;
+    list->current = nodito;
     list->tail = nodito;
   }
   else{
