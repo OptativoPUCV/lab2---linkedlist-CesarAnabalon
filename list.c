@@ -100,11 +100,16 @@ void pushCurrent(List * list, void * data)
 {
   Node* nodito = createNode(data);
 
+  if(list->head == NULL)
+  {
+    list->head = nodito;
+    list->tail = nodito;
+  }
+  else{
   nodito->next = list->current->next;
   list->current = nodito;
-  
-  return list->current->data;
-  
+  }
+    
 }
 
 void * popFront(List * list) {
