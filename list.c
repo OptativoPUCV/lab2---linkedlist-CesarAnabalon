@@ -164,7 +164,7 @@ void *popCurrent(List *list) {
 
   list->current = nodoAux;
 
-  return datoEliminado;
+  return aEliminar;
 }
 
 void cleanList(List * list) {
