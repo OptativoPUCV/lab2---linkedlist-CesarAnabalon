@@ -99,15 +99,10 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data) 
 {
   Node* nodito = createNode(data);
-
-  if(list->head == NULL)
+  
+  if(list->current  ==  NULL)
   {
-    pushFront(list,nodito);
-  }
-  else
-  {
-  nodito->next = list->current->next;
-  list->current->next = nodito;
+    
   }
     
 }
@@ -122,9 +117,50 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void *popCurrent(List *list) { 
   
-    return NULL;
+  if(list->current == NULL) return NULL;
+  
+  void* datoEliminado = list->current->data;
+  
+  
+  if(list->current == list->head)
+  {
+    
+    list->head = list->head->next;
+
+    if(list->head->prev != NULL)
+    {
+      list->head->prev = NULL;
+    }
+    
+  }
+  else
+  {
+    list->current->prev->next = list->current->next;
+    
+  }
+  
+  if(list->current == list->tail)
+  {
+    
+    list->tail = list->current->prev;
+    list->tail->next = NULL;
+  }
+  else
+  {
+      
+    list->current->next->prev = list->current->prev;
+    
+  }
+  
+  Node *nodoAux = list->current->next;
+  
+  free(list->current);
+
+  list->current = nodoAux;
+
+  return datoEliminado;
 }
 
 void cleanList(List * list) {
